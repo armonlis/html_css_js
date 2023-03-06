@@ -1,2 +1,47 @@
 @import "reset.sass" 
-  
+@import "colors.sass"
+@import "fonts.sass"
+
+body
+  width: 100vw
+
+.main-header
+  height: 900px
+  background: url("/src/public/backgrounds/header_bg.jpg")
+  background-repeat: no-repeat
+  color: $white
+  padding-top: 5px
+
+.main-header__contacts
+  height: 20px
+  width: 1110px
+  color: $white
+  margin: 0 auto
+  margin-top: 25px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  font-family: Montserrat_Med 
+  font-size: 13px
+
+.main-header__nav-bar ul
+  width: 1110px
+  height: 47px
+  margin: 0 auto
+  margin-top: 20px
+  font-family: Montserrat_Med
+  font-size: 14px
+  display: flex
+  align-items: center
+  justify-content: space-around
+  border-top: 1px solid $white
+  border-bottom: 1px solid $white
+
+.main-header__nav-bar ul li
+  list-style: none
+  display: block
+  width: 275px
+  text-align: center
+
+
+
