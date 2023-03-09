@@ -7,6 +7,10 @@
   font-family: Montserrat_Med;
   src: url("/src/public/fonts/Montserrat/Montserrat-Medium.ttf");
 }
+@font-face {
+  font-family: Playfair_Med;
+  src: url("/src/public/fonts/Playfair/PlayfairDisplay-Medium.ttf");
+}
 body {
   width: 100vw;
 }
@@ -17,7 +21,7 @@ body {
   background: url("/src/public/backgrounds/header_bg.jpg");
   background-repeat: no-repeat;
   color: #FFF;
-  padding-top: 5px;
+  border-top: 1px solid transparent;
 }
 
 .main-header__contacts {
@@ -25,7 +29,7 @@ body {
   width: 1110px;
   color: #FFF;
   margin: 0 auto;
-  margin-top: 25px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,6 +84,36 @@ body {
   font-size: 16px;
   border: none;
   color: #FFF;
+}
+
+.main-text {
+  background-color: #282828;
+  height: 856px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-text__text-container {
+  width: 1110px;
+  height: 656px;
+  border: 3px solid #C4C4C4;
+}
+
+.main-text__text-container__header {
+  color: #FFF;
+  text-align: center;
+  font-size: 36px;
+  line-height: 54px;
+  margin-top: 60px;
+}
+
+.main-text__text-container__line {
+  height: 0px;
+  width: 160px;
+  border-top: 1px solid #FFF;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
