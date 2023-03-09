@@ -6,6 +6,7 @@ body
   width: 100vw
 
 .main-header
+  position: relative
   height: 900px
   background: url("/src/public/backgrounds/header_bg.jpg")
   background-repeat: no-repeat
@@ -31,6 +32,7 @@ body
   margin-top: 20px
   font-family: Montserrat_Med
   font-size: 14px
+  line-height: 47px
   display: flex
   align-items: center
   justify-content: space-around
@@ -40,8 +42,34 @@ body
 .main-header__nav-bar ul li
   list-style: none
   display: block
+  height: 47px
   width: 275px
   text-align: center
+  border-right: 1px solid $white 
+
+.main-header__nav-bar__last-element
+  border-right: none !important
+
+.main-header__buttons-container
+  display: flex
+  width: 415px
+  height: 50px
+  align-items: center
+  justify-content: space-between
+  position: absolute
+  top: 700px
+  left: 752px
+
+.main-header__buttons-container__button
+  width: 203px
+  height: 50px
+  background-color: $btn_gold
+  font-family: Montserrat_Med
+  font-size: 16px
+  border: none
+  color: $white
+
+  
 
 
 
