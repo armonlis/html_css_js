@@ -3,7 +3,11 @@
 @import "fonts.sass"
 
 body
-  width: 100vw
+  width: 1920px
+  font-family: Montserrat
+  font-size: 14px
+  line-height: 21px
+  color: $main-text-bg
 
 .main-header
   position: relative
@@ -125,14 +129,21 @@ body
   align-items: center
   justify-content: space-between
 
-.main-collection__container__information, 
-.main-collection__container__slider
+.main-collection__container__information
   height: 100%
-  width: 48%
+  width: 450px
   display: flex
   flex-direction: column
   align-items: flex-start
   justify-content: start
+
+.main-collection__container__slider
+  height: 100%
+  width: 550px
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  justify-content: center
 
 .information__new
   font-family: Montserrat
@@ -143,7 +154,7 @@ body
 
 .information__header
   margin-top: 30px
-  max-width: 300px
+  max-width: 330px
 
 .information__line
   width: 160px
@@ -158,6 +169,50 @@ body
   font-size: 14px
   line-height: 21px
   margin-top: 30px
+
+.information__table
+  width: 445px
+  max-height: 225px
+  margin-top: 30px
+    
+.information__table__row
+  height: 75px
+
+td.information__table__row__date
+  width: 70px
+  text-align: center
+  border-bottom: 1px solid $main-text-bg
+  border-right: 1px solid $main-text-bg
+  
+td.information__table__row__info
+  text-align: center
+  border-bottom: 1px solid $main-text-bg
+
+td.information__table__row__date.information__table__row__date__last,
+td.information__table__row__info.information__table__row__info__last
+  border-bottom: none 
+
+.row__info__name
+  font-family: Playfair_Med
+  font-weight: bold
+  font-size: 18px
+  line-height: 21px
+
+.row__info__description
+  margin-top: 5px
+
+.information__button
+  width: 255px
+  height: 50px
+  margin-top: 30px
+  background-color: $btn_gold
+  border: none
+  font-family: Montserrat_Med
+  font-size: 16px
+  color: white
+
+
+
 
   
 
