@@ -355,4 +355,66 @@ td.information__table__row__info.information__table__row__info__last {
   color: #FFF;
 }
 
+.footer {
+  width: 1920px;
+  height: 220px;
+  background-color: #998431;
+  border-top: 1px solid #998431;
+  color: #FFF;
+}
+
+.footer__nav,
+.footer__info {
+  width: 1110px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-top: 1px solid #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__nav__item {
+  margin: 0 30px;
+}
+
+.footer__info {
+  margin-top: 0px;
+  border-bottom: 1px solid #FFF;
+}
+
+.footer__info__name,
+.footer__info__phone,
+.footer__info__social,
+.footer__info__copy {
+  display: block;
+  width: 300px;
+  height: 60px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: center;
+}
+
+.footer__info__name,
+.footer__info__phone,
+.footer__info__social {
+  border-right: 1px solid #FFF;
+}
+
+.footer__info__phone,
+.footer__info__social {
+  width: 235px;
+}
+
+.footer__info__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__info__social__item {
+  margin: 0 17px;
+}
+
 /*# sourceMappingURL=style.css.map */
