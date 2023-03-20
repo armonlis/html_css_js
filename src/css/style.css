@@ -99,6 +99,11 @@ body {
   color: #FFF;
 }
 
+.main-header__buttons-container__button:hover {
+  cursor: pointer;
+  background-color: #00008B;
+}
+
 .main-text {
   background-color: #282828;
   height: 856px;

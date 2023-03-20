@@ -19,9 +19,9 @@
                     <li class="main-header__nav-bar__last-element">Contacts</li>
                 </ul>
             </nav>
-            <div class="main-header__buttons-container">
-                <input class="main-header__buttons-container__button" type="button" value="VINE CARD" />
-                <input class="main-header__buttons-container__button" type="button" value="DEGUSTATION" />
+            <div id="main-header__button-container" class="main-header__buttons-container">
+                <input id="vine-card-bttn" class="main-header__buttons-container__button" type="button" value="VINE CARD" />
+                <input id="degustation-bttn" class="main-header__buttons-container__button" type="button" value="DEGUSTATION" />
             </div>
         </header>
         <main>
@@ -41,7 +41,7 @@
                     <img class="main-text__text-container__image" src="/src/public/images/vine-glass.png" alt="vine glass image" />
                 </div>
             </section>
-            <section class="main-collection">
+            <section id="vine-card-bttn-path" class="main-collection">
                 <div class="main-collection__container">
                     <div class="main-collection__container__information">
                         <p class="information__new">New in the collection</p>
@@ -85,7 +85,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main-form">
+            <section id="degustation-bttn-path" class="main-form">
                 <div class="main-form__form-container">
                     <h2 class="main-form__form-container__header">SIGN UP FOR A TASTING</h2>
                     <img class="main-form__form-container__left-image" src="/src/public/images/vine.png" alt="a vine image" />
@@ -126,5 +126,6 @@
                 <p class="footer__info__copy">@LE CORTE</p>
             </div>
         </footer> 
+        <script src="/src/js/index.js"></script>
     </body>
 </html>
