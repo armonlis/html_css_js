@@ -8,6 +8,22 @@ h2 {
   line-height: 54px;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+}
+
 @font-face {
   font-family: Montserrat;
   src: url("/src/public/fonts/Montserrat/Montserrat-Regular.ttf");
