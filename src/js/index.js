@@ -1,3 +1,5 @@
+import "./slider";
+
 function clickHeaderBttn(id) {
   if (!id.includes('bttn')) return;
   let link = document.createElement("a");

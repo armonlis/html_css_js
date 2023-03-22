@@ -146,8 +146,37 @@ body
   width: 550px
   display: flex
   flex-direction: column
-  align-items: flex-end
+  align-items: center
   justify-content: center
+  position: relative
+
+.main-collection__container__slider > img
+  max-height: 98%
+  max-width: 98%
+
+.slider-left-bttn,
+.slider-right-bttn
+  position: absolute
+  display: block
+  hight: 150px
+  width: 150px
+  font-size: 128px
+  line-height: 150px
+  font-weight: bold
+  text-align: center
+  color: $white
+  left: -75px
+  border-radius: 50%
+  background-color: $blue-bttn
+  opacity: .25
+
+.slider-right-bttn
+  left: calc(100% - 75px)
+
+.slider-left-bttn:hover,
+.slider-right-bttn:hover
+  cursor: pointer
+  opacity: .5
 
 .information__new
   font-family: Montserrat
@@ -214,6 +243,9 @@ td.information__table__row__info.information__table__row__info__last
   font-family: Montserrat_Med
   font-size: 16px
   color: white
+
+.information__button:hover
+  cursor: pointer
 
 .main-form
   width: 1920px
