@@ -332,12 +332,13 @@ td.information__table__row__info.information__table__row__info__last {
   margin: 0 auto;
   margin-top: 115px;
   text-align: center;
+  position: relative;
 }
 
 .main-form__form-container__header {
   width: 510px;
   position: absolute;
-  top: 86px;
+  top: -27px;
   left: calc(50% - 255px);
   color: #FFF;
   background-color: #282828;
@@ -350,13 +351,13 @@ td.information__table__row__info.information__table__row__info__last {
 }
 
 .main-form__form-container__left-image {
-  top: 60px;
-  left: 375px;
+  top: -110px;
+  left: -130px;
 }
 
 .main-form__form-container__right-image {
-  top: 64px;
-  right: 352px;
+  top: -110px;
+  right: -100px;
 }
 
 .main-form__form-container__line {
@@ -388,6 +389,22 @@ td.information__table__row__info.information__table__row__info__last {
   background-color: #282828;
   color: #FFF;
   font-weight: bold;
+}
+
+.main-form__form-container__name-input.red {
+  color: #F00;
+}
+
+.main-form__form-container__name-tip {
+  width: 200px;
+  color: #FFF;
+  opacity: 0.5;
+  border: 3px solid #998431;
+  border-radius: 10px;
+  position: absolute;
+  left: 10px;
+  top: 250px;
+  padding: 20px;
 }
 
 .main-form__form-container__phone-input {

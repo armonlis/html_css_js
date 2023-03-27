@@ -1,4 +1,5 @@
-import "./slider";
+import './slider';
+import './degustation';
 
 function clickHeaderBttn(id) {
   if (!id.includes('bttn')) return;
