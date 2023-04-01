@@ -434,6 +434,9 @@ td.information__table__row__info.information__table__row__info__last {
   font-size: 28px;
   line-height: 50px;
   color: #FFF;
+}
+
+.main-form__form-container__submit-button.active {
   cursor: pointer;
 }
 

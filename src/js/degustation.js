@@ -6,6 +6,8 @@ function nameInputHandler(event) {
   const {value} = target;
   const sample = /^[a-z]{3,}$/i;
   if (!sample.test(value) && value !== '') {
+    nameInput.classList.remove('validated');
+    submitBttn.classList.remove('active');
     nameInput.classList.add('red');
     if (document.getElementById('name-tip')) return
     const tip = document.createElement('div');
@@ -17,14 +19,22 @@ function nameInputHandler(event) {
   }
   if (nameInput.classList.contains('red')) {
     nameInput.classList.remove('red');
+    nameInput.classList.add('validated');
+    if (phoneInput.classList.contains('validated')) submitBttn.classList.add('active')
     document.getElementById('name-tip').remove();
+  }
+  if (value === '') {
+    nameInput.classList.remove('validated');
+    submitBttn.classList.remove('active');
   }
 };
 function phoneInputHandler(event) {
   const {target} = event;
   const {value} = target;
-  const sample = /^8\d{3}-?\d{3}-?\d{2}-?\d{2}$|^\+?\d{3}-?\d{2,3}-?\d{3}-?\d{2}-?\d{2}$/;
+  const sample = /^8-?\d{3}-?\d{3}-?\d{2}-?\d{2}$|^\+?\d{3}-?\d{2,3}-?\d{3}-?\d{2}-?\d{2}$/;
   if (!sample.test(value) && value !== '') {
+    phoneInput.classList.remove('validated');
+    submitBttn.classList.remove('active');
     phoneInput.classList.add('red');
     if (document.getElementById('phone-tip')) return
     const tip = document.createElement('div');
@@ -37,11 +47,18 @@ function phoneInputHandler(event) {
   }
   if (phoneInput.classList.contains('red')) {
     phoneInput.classList.remove('red');
+    phoneInput.classList.add('validated');
+    if (nameInput.classList.contains('validated')) submitBttn.classList.add('active')
     document.getElementById('phone-tip').remove();
+  }
+  if (value === '') {
+    phoneInput.classList.remove('validated');
+    submitBttn.classList.remove('active');
   }
 };
 
 function submitHandler() {
+  if (!nameInput.classList.contains('validated') || !phoneInput.classList.contains('validated')) return;
   function sendForm() {                           // your send form logic
     document.getElementById('modal').remove();
   };
@@ -76,7 +93,6 @@ function submitHandler() {
                      <input onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='gray'"
                       onclick="document.getElementById('modal').remove()" class="form-input" style="border-radius: 0 5px 5px 0;" type="button" value="OK" />`
   document.getElementById('form-container').append(modal);
-  
 };
 
 nameInput.addEventListener('input', nameInputHandler);
