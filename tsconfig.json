@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "outDir": "./src/js/",
+  },
+  "include": ["./src/ts/*"],
+  "watchOptions": {},
+}
