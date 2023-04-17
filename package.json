@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc --watch && sass --watch src/sass:src/css & webpack serve --mode development",
-    "build": "tsc && sass src/sass:src/css && webpack --mode production"
+    "start": "tsc --watch | sass --watch src/sass:src/css & webpack serve --mode development",
+    "build": "tsc & sass src/sass:src/css & webpack --mode production"
   },
   "repository": {
     "type": "git",

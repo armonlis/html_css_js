@@ -9,7 +9,7 @@ module.exports = {
         clean: true
     },
     devServer: {
-        watchFiles: ["index.html", "./src/js/*.js", "./src/css/*.css"],
+        watchFiles: ["index.html", "/src/js/*.js", "/src/css/*.css", "./src/sass/*.sass"],
         port: 4000,
         hot: true
     },

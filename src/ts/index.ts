@@ -1,1 +1,1 @@
-console.log('IT IS REALLY TYPESCRIPT!!!');
+console.log("IT'S REALLY TYPESCRIPT!!!");
