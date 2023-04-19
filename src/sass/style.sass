@@ -7,8 +7,7 @@
   
 body
   background: url('/src/public/images/back.png')
-  background-origin: content-box
-  background-size: 100vw auto
+  background-size: cover
 
 @media screen and (max-width: 1320px)
   body
@@ -32,3 +31,29 @@ body
   color: white
   font-weight: 700
   line-height: 50px
+
+main
+  height: 80vh
+  width: 80vw
+  margin: 0 auto
+  margin-top: 5vh
+  border-radius: 3vh
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .3)
+
+.main_header, 
+.main_footer
+  height: 10%
+  background-color: $mainHeadFoot
+
+.main_header
+  border-radius: 3vh 3vh 0 0 
+
+.main_footer
+  border-radius: 0 0 3vh 3vh
+
+.main_section
+  height: 80%
+  background-image: url("/src/public/images/main-back.png")
+  background-size: cover
+  background-color: rgba(255, 70, 86, 1)
+  
