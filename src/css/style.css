@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: Montserrat;
+  src: url("/src/public/fonts/Montserrat-Regular.ttf");
+}
 body {
   background: url("/src/public/images/back.png");
   background-origin: content-box;
@@ -13,6 +17,23 @@ body {
   body {
     background-size: auto 100vh;
   }
+}
+.logo {
+  margin-top: 80px;
+  margin-left: 80px;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.logo_text {
+  margin-left: 24px;
+  font-family: Montserrat;
+  font-size: 32px;
+  color: white;
+  font-weight: 700;
+  line-height: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
