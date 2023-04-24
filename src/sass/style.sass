@@ -18,8 +18,8 @@ body
   margin-left: 40px
   height: 50px
   display: flex
-  align-items: flex-start
-  align-content: center
+  align-items: center
+  justify-content: flex-start
 
 .logo_image
   height: 50px
@@ -57,4 +57,29 @@ main
   background-image: url("/src/public/images/main-back.png")
   background-size: cover
   background-color: $mainSectBack
+
+.main_header__logo
+  height: 100%
+  width: 15%
+  display: flex
+  justify-content: space-around
+  align-items: center
+  margin-left: 3%
+
+.main_header__logo_riot-games,
+.main_header__logo_delimiter,
+.main_header__logo_valorant-logo
+  margin: 0 2%
+
+.main_header__logo_riot-games
+  height: 30%
+
+.main_header__logo_delimiter
+  height: 40%
+  width: 0
+  border-right: 2px solid $white
+
+.main_header__logo_valorant-logo
+  height: 35%
+
   
