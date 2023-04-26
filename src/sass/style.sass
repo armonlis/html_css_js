@@ -9,6 +9,10 @@ body
   background: url('/src/public/images/back.png')
   background-size: cover
 
+p
+  color: $white
+  font-family: Montserrat
+
 @media screen and (max-width: 1320px)
   body
     background-size: auto 100vh
@@ -95,7 +99,7 @@ main
 .main_header__nav_link
   text-decoration: none
   font-family: Montserrat
-  font-size: .7vw
+  font-size: .6vw
   font-weight: bold
   color: $white
   display: flex
@@ -105,4 +109,40 @@ main
 .main_header__nav_link_inner-image
   margin-left: 5px
 
+.main_header__nav-portrait_menu
+  height: 5vh
+  width: 5vh
+  border: 2px solid $white
+  border-radius: 1vh
+
+.main_header__user
+  width: 15%
+  display: flex
+  align-items: center
+  justify-content: space-around
+
+.main_header__user_user-icon
+  margin: 0 2%
+
+.main_header__user_user-menu
+  display: flex
+  align-items: center
+  justify-content: space-around
+  cursor: pointer
+
+.main_header__user_user-menu_text
+  font-size: .6vw
+  font-weight: bold
+
+.main_header__user_user-menu_triangle
+  margin-left: 5px
+
+
+@media screen and (orientation: landscape)
+  .main_header__nav-portrait_menu
+    display: none
+
+@media screen and (orientation: portrait)
+  .main_header__nav
+    display: none
   
