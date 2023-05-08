@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "ES6",
     "outDir": "./src/js/",
+    "jsx": "react-jsx",
   },
   "include": ["./src/ts/*"],
   "watchOptions": {},

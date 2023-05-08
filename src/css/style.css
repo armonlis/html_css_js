@@ -7,6 +7,10 @@
   font-family: Montserrat;
   src: url("/src/public/fonts/Montserrat-Regular.ttf");
 }
+@font-face {
+  font-family: Druk;
+  src: url("/src/public/fonts/DrukCyr-Medium.ttf");
+}
 body {
   background: url("/src/public/images/back.png");
   background-size: cover;
@@ -162,6 +166,27 @@ main {
 
 .main_header__user_user-menu_triangle {
   margin-left: 5px;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.app-header {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  height: 10vh;
+  text-align: center;
+  font-family: Druk;
+  font-size: 8vh;
+  letter-spacing: 3vh;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  transform-origin: bottom left;
+  transform: rotate(90deg);
 }
 
 @media screen and (orientation: landscape) {
