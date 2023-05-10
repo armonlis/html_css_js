@@ -189,6 +189,59 @@ main {
   transform: rotate(90deg);
 }
 
+.app_agents-container {
+  position: absolute;
+  height: 70%;
+  width: 90%;
+  top: 15%;
+  left: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.agent {
+  height: 100%;
+  width: 20%;
+  position: relative;
+  background-color: #1F2326;
+}
+
+.agent_name,
+.agent_country {
+  display: block;
+  position: absolute;
+  top: -4vw;
+  left: -2vw;
+  font-family: Druk;
+  font-size: 4vw;
+  color: transparent;
+  letter-spacing: 0.5vw;
+  -webkit-text-stroke: 2px #fff;
+  transform-origin: bottom left;
+  transform: rotate(90deg);
+}
+
+.agent_country {
+  -webkit-text-stroke: 0px transparent;
+  font-size: 2vw;
+  color: #FF4656;
+  top: -1vw;
+  left: 2vw;
+}
+
+.agent_image-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.agent_image {
+  width: 100%;
+}
+
 @media screen and (orientation: landscape) {
   .main_header__nav-portrait_menu {
     display: none;
@@ -197,6 +250,10 @@ main {
 @media screen and (orientation: portrait) {
   .main_header__nav {
     display: none;
+  }
+  .app-header {
+    font-size: 8vw;
+    left: 0;
   }
 }
 
