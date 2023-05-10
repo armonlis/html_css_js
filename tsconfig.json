@@ -3,6 +3,7 @@
     "target": "ES6",
     "outDir": "./src/js/",
     "jsx": "react-jsx",
+    "moduleResolution": "nodenext",
   },
   "include": ["./src/ts/*"],
   "watchOptions": {},
