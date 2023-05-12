@@ -205,6 +205,11 @@ main {
   width: 20%;
   position: relative;
   background-color: #1F2326;
+  cursor: pointer;
+}
+
+.agent.agent_selected {
+  background-color: #fff;
 }
 
 .agent_name,
@@ -239,7 +244,29 @@ main {
 }
 
 .agent_image {
+  width: inherit;
+}
+
+.agent-perks {
+  height: 15%;
   width: 100%;
+  position: absolute;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  bottom: -5%;
+  left: 5%;
+  background-color: #1F2326;
+}
+
+.agent-perks.agent-perks_selected {
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.agent_last .agent_name {
+  -webkit-text-stroke: 2px black;
 }
 
 @media screen and (orientation: landscape) {

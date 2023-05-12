@@ -2,10 +2,11 @@ const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     entry: {
-        filename: "./src/js/index.js",
+        app: "./src/js/index-app.js",
+        index: "./src/js/index.js",        
     },
     output: {
-        filename: "./src/js/index.js",
+        filename: "./src/js/[name].js",
         clean: true
     },
     devServer: {
