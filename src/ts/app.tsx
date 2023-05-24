@@ -7,8 +7,9 @@ export default function App() {
     const [agentState, setAgentState] = useState([false, false, false, false]);
 
     function agentClickHandler(event) {
+      const parent = event.target.offsetParent;
       const newState = [];
-      const idNum = +event.target.offsetParent.id.replace(/[a-z]/g, '');
+      const idNum = +parent.id.replace(/[a-z]/g, '');
       for (let i = 0; i < 5; i += 1) {
         newState.push(i === idNum);
       };

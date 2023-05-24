@@ -13,7 +13,7 @@ export default function Agent(props) {
       <div className="agent_image-container">
         <img className="agent_image" src={agentImg} alt="The agent photo."></img>
       </div>
-      <div className={ selected === 'true' ? 'agent-perks agent-perks_selected' : 'agent-perks' }>
+      <div className={ selected ? 'agent-perks agent-perks_selected' : 'agent-perks' }>
       </div>
     </div>
   )
