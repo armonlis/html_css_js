@@ -10,16 +10,24 @@ export default function App() {
     const [agentShowState, setAgentShowState] = useState(isLandscape);
         
     function resizeHandler() {
+      setAgentSelectState([false, false, false, false]);
       const orientation = window.screen.orientation.type;
       const isLandscape = orientation === "landscape-primary" || orientation === "landscape-secondary";
       setAgentShowState(isLandscape);
+    };
+    
+    function swapHandler(event) {
+      
     };
 
     useEffect(() => { 
       function removeResList() {
         window.removeEventListener('resize', resizeHandler);
       };
-      return removeResList;
+      function removeSwap() {
+        window.removeEventListener('touchmove', swapHandler);
+      };
+      return () => { removeResList(); removeSwap(); };
     });
 
     function agentClickHandler(event) {
@@ -33,6 +41,7 @@ export default function App() {
     }; 
     
     window.addEventListener('resize', resizeHandler);
+    window.addEventListener('touchmove', swapHandler);
 
     return (
         <div className="app">

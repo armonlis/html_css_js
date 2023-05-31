@@ -8,9 +8,13 @@ export default function App() {
     const isLandscape = orientation === "landscape-primary" || orientation === "landscape-secondary";
     const [agentShowState, setAgentShowState] = useState(isLandscape);
     function resizeHandler() {
+        setAgentSelectState([false, false, false, false]);
         const orientation = window.screen.orientation.type;
         const isLandscape = orientation === "landscape-primary" || orientation === "landscape-secondary";
         setAgentShowState(isLandscape);
+    }
+    ;
+    function swapHandler(event) {
     }
     ;
     useEffect(() => {
@@ -18,7 +22,11 @@ export default function App() {
             window.removeEventListener('resize', resizeHandler);
         }
         ;
-        return removeResList;
+        function removeSwap() {
+            window.removeEventListener('touchmove', swapHandler);
+        }
+        ;
+        return () => { removeResList(); removeSwap(); };
     });
     function agentClickHandler(event) {
         const parent = event.target.offsetParent;
@@ -32,6 +40,7 @@ export default function App() {
     }
     ;
     window.addEventListener('resize', resizeHandler);
+    window.addEventListener('touchmove', swapHandler);
     return (_jsxs("div", Object.assign({ className: "app" }, { children: [_jsx(Header, {}), _jsxs("div", Object.assign({ className: "app_agents-container", id: "app_agents-container", onClick: agentClickHandler }, { children: [_jsx(Agent, { id: "agent0", selected: agentSelectState[0] }), agentShowState ? _jsx(Agent, { id: "agent1", selected: agentSelectState[1] }) : '', agentShowState ? _jsx(Agent, { id: "agent2", selected: agentSelectState[2] }) : '', agentShowState ? _jsx(Agent, { id: "agent3", selected: agentSelectState[3] }) : ''] }))] })));
 }
 ;
