@@ -8,8 +8,8 @@ export default function Agent(props) {
   const { selected = 'false' } = props;
   return (
     <div id={ id } className={ selected ? 'agent agent_selected' : 'agent' }>
-      <p className="agent_name">{agentName}</p> 
-      <p className="agent_country">{agentCountry}</p>
+      <p className={ selected ? 'agent_name agent_name__selected' : 'agent_name' }>{agentName}</p> 
+      <p className='agent_country'>{agentCountry}</p>
       <div className="agent_image-container">
         <img className="agent_image" src={agentImg} alt="The agent photo."></img>
       </div>

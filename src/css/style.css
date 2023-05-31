@@ -227,6 +227,10 @@ main {
   transform: rotate(90deg);
 }
 
+.agent_name__selected {
+  -webkit-text-stroke: 2px #1F2326;
+}
+
 .agent_country {
   -webkit-text-stroke: 0px transparent;
   font-size: 2vw;
