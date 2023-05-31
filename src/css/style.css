@@ -282,6 +282,19 @@ main {
     font-size: 8vw;
     left: 0;
   }
+  .agent {
+    width: 60%;
+  }
+  .agent_name {
+    font-size: 8vh;
+    top: -8vh;
+    left: -4vh;
+  }
+  .agent_country {
+    font-size: 4vh;
+    top: -3vh;
+    left: 4vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
