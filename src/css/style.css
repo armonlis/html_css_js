@@ -248,7 +248,8 @@ main {
 }
 
 .agent_image {
-  width: inherit;
+  height: inherit;
+  max-width: 100%;
 }
 
 .agent-perks {

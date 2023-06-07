@@ -91,6 +91,6 @@ export default function App() {
     window.addEventListener('resize', resizeHandler);
     window.addEventListener('touchstart', touchHandler);
     window.addEventListener('touchend', touchHandler);
-    return (_jsxs("div", Object.assign({ className: "app" }, { children: [_jsx(Header, {}), _jsxs("div", Object.assign({ className: "app_agents-container", id: "app_agents-container", onClick: agentClickHandler }, { children: [agentShowState[0] ? _jsx(Agent, { id: "agent0", selected: agentSelectState[0] }) : '', agentShowState[1] ? _jsx(Agent, { id: "agent1", selected: agentSelectState[1] }) : '', agentShowState[2] ? _jsx(Agent, { id: "agent2", selected: agentSelectState[2] }) : '', agentShowState[3] ? _jsx(Agent, { id: "agent3", selected: agentSelectState[3] }) : ''] }))] })));
+    return (_jsxs("div", Object.assign({ className: "app" }, { children: [_jsx(Header, {}), _jsxs("div", Object.assign({ className: "app_agents-container", id: "app_agents-container", onClick: agentClickHandler }, { children: [agentShowState[0] ? _jsx(Agent, { id: "agent0", agentImg: "/src/public/images/agent0.png", selected: agentSelectState[0] }) : '', agentShowState[1] ? _jsx(Agent, { id: "agent1", agentImg: "/src/public/images/agent1.png", selected: agentSelectState[1] }) : '', agentShowState[2] ? _jsx(Agent, { id: "agent2", agentImg: "/src/public/images/agent2.png", selected: agentSelectState[2] }) : '', agentShowState[3] ? _jsx(Agent, { id: "agent3", agentImg: "/src/public/images/agent3.png", selected: agentSelectState[3] }) : ''] }))] })));
 }
 ;

@@ -93,10 +93,10 @@ export default function App() {
         <div className="app">
             <Header /> 
             <div className="app_agents-container" id="app_agents-container" onClick={agentClickHandler}>
-                { agentShowState[0] ? <Agent id="agent0" selected={agentSelectState[0]}/> : '' }
-                { agentShowState[1] ? <Agent id="agent1" selected={agentSelectState[1]}/> : '' }
-                { agentShowState[2] ? <Agent id="agent2" selected={agentSelectState[2]}/> : '' }
-                { agentShowState[3] ? <Agent id="agent3" selected={agentSelectState[3]}/> : '' }
+                { agentShowState[0] ? <Agent id="agent0" agentImg="/src/public/images/agent0.png" selected={agentSelectState[0]}/> : '' }
+                { agentShowState[1] ? <Agent id="agent1" agentImg="/src/public/images/agent1.png" selected={agentSelectState[1]}/> : '' }
+                { agentShowState[2] ? <Agent id="agent2" agentImg="/src/public/images/agent2.png" selected={agentSelectState[2]}/> : '' }
+                { agentShowState[3] ? <Agent id="agent3" agentImg="/src/public/images/agent3.png" selected={agentSelectState[3]}/> : '' }
             </div>  
         </div>
     );
