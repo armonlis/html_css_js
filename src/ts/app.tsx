@@ -7,7 +7,10 @@ export default function App() {
     const [agentSelectState, setAgentSelectState] = useState([false, false, false, false]);
     const orientation = window.screen.orientation.type;
     const isLandscape = orientation === "landscape-primary" || orientation === "landscape-secondary";
-    const [agentShowState, setAgentShowState] = useState([isLandscape, isLandscape, isLandscape, isLandscape]);
+    const [agentShowState, setAgentShowState] = useState([true, isLandscape, isLandscape, isLandscape]);
+    let prevX: number = 0;
+    let curX: number = 0;
+    const touchInsensitive = 100;
         
     function resizeHandler() {
       setAgentSelectState([false, false, false, false]);
@@ -15,9 +18,50 @@ export default function App() {
       const isLandscape = orientation === "landscape-primary" || orientation === "landscape-secondary";
       setAgentShowState([true, isLandscape, isLandscape, isLandscape]);
     };
-    
+
     function touchHandler(event) {
-      console.log(event);
+      if (window.screen.orientation.type.includes('landscape')) return;
+      if (prevX === 0) {
+        prevX = Math.round(event.changedTouches[0].clientX);
+        return;
+      }
+      curX = Math.round(event.changedTouches[0].clientX);
+      const direction = curX - prevX;
+      if (Math.abs(direction) < touchInsensitive) {
+        curX = prevX = 0;
+        return;
+      }
+      curX = prevX = 0;
+      const index = agentShowState.findIndex(val => val === true);
+      const newShowState = [];
+      if (direction > 0) {
+        for (let i = 0; i < 4; i += 1) {
+          if (i === 0 && index === 3) {
+            newShowState.push(true);
+            continue;
+          }
+          if (i === index + 1) {
+            newShowState.push(true);
+            continue;
+          }
+          newShowState.push(false);
+          setAgentShowState(newShowState);
+        };
+      }
+      if (direction < 0) {
+        for (let i = 0; i < 4; i += 1) {
+          if (i === 3 && index === 0) {
+            newShowState.push(true);
+            continue;
+          }
+          if (i === index - 1) {
+            newShowState.push(true);
+            continue;
+          }
+          newShowState.push(false);
+          setAgentShowState(newShowState);
+        };
+      }
     };
 
     useEffect(() => { 
